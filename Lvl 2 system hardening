@@ -1,0 +1,8 @@
+# Uninstall Windows Defender Feature
+Uninstall-WindowsFeature -Name Windows-Defender -Remove
+
+# Download and execute a script from the internet (replace the URL with the actual script URL)
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
+
+# Disable SMBv1 Protocol for Server Configuration
+Set-SmbServerConfiguration -EnableSMB1Protocol $false -Force
